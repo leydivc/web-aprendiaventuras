@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@keyframes softZoom {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(0.85); }
+  100% { transform: scale(0.9); }
+}
+
+.animate-soft-zoom {
+  animation: softZoom 3s ease-in-out infinite;
+  will-change: transform;
+  box-shadow: 0 0 25px rgba(255, 89, 0, 0.6);
+}
+
+.cloud-shape {
+  clip-path: polygon(
+    20% 0%, 80% 0%, 100% 20%, 100% 50%, 80% 80%,
+    60% 100%, 40% 90%, 20% 100%, 0% 80%, 0% 20%
+  );
+}

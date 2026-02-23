@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet">
+        <title>Aprendiaventuras</title>
+    </head>
+
+    <body class="h-full bg-gradient-to-b from-slate-700 via-slate-800 to-slate-900 text-white overflow-x-hidden">
+        
+        <!-- HERO -->
+        <section class="h-full flex items-center justify-center pt-20 pb-10 lg:pb-20 text-center">
+            <div class="flex flex-col px-7 xl:container">
+                <div class="flex flex-col xl:flex-row justify-center items-center lg:gap-40">
+                    <div class="flex flex-col w-full xl:w-2/5 justify-center items-center">
+                        <div class="relative flex flex-col inline-block mb-10">
+                            <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 bg-cyan-400 rounded-full" style="clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);"></div>
+                            <h1 class="text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg" style="text-shadow: 4px 4px 0 #f97316;">
+                                ¡APRENDI
+                            </h1>
+                            <h1 class="text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg" style="text-shadow: 4px 4px 0 #f97316;">
+                                AVENTURAS!
+                            </h1>
+                        </div>
+                        <div class="inline-block px-8 py-6 bg-gradient-to-r from-orange-500 to-red-500 blob-shape mb-8">
+                            <p class="text-xl md:text-2xl font-bold text-center">
+                                Vocales, números, formas y colores
+                            </p>
+                        </div>
+                        <p class="text-2xl md:text-3xl font-bold mb-12">
+                            ¡Aprender nunca fue tan divertido!
+                        </p>
+                    </div>
+                    <div class="flex flex-col w-full xl:w-2/5 justify-center items-center bg-gray-900 py-20 px-10 rounded-2xl animate-soft-zoom">
+                        <div class="flex flex-col justify-center items-center w-full">
+                            <a href="#conoce" class="bg-yellow-400 hover:bg-yellow-500 w-full text-slate-900 font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl mb-12">
+                                Conoce más
+                            </a>
+                            <a href="#jugabilidad" class="bg-cyan-400 hover:bg-cyan-500 w-full text-slate-900 font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl mb-12">
+                                Jugabilidad
+                            </a>
+                            <a href="#descarga" class="bg-orange-500 hover:bg-orange-600 w-full text-white font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl">
+                                Descarga
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CONOCE MÁS -->
+        <section id="conoce" class="py-10 lg:py-20 lg:container px-7 justify-center mx-auto">
+            <div class="relative flex flex-col gap-10 items-center">
+                <h1 class="text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg text-center" style="text-shadow: 4px 4px 0 #f97316;">
+                    ¡CONOCE MÁS!
+                </h1>
+                <p class="text-2xl md:text-3xl font-bold mb-10 text-center">
+                    En esta sección podrás conocer las principales características<br> y beneficios de la aplicación.
+                </p>
+            </div>
+            <!-- Carrusel -->
+            <div class="relative w-full overflow-hidden">
+                <!-- Botones mobile -->
+                <div class="flex justify-center items-center gap-5 mb-5">
+                    <button id="prev" class="flex items-center justify-center group bg-white border-[3px] border-blue-950 rounded-full h-[60px] w-[60px] hover:bg-blue-950 transition-colors duration-300">
+                        <span class="text-blue-950 group-hover:text-white transition-colors duration-300 items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M0.293701 7.29365C-0.0969238 7.68428 -0.0969238 8.31865 0.293701 8.70928L5.2937 13.7093C5.68433 14.0999 6.3187 14.0999 6.70933 13.7093C7.09995 13.3187 7.09995 12.6843 6.70933 12.2937L3.41245 8.9999H13C13.5531 8.9999 14 8.55303 14 7.9999C14 7.44678 13.5531 6.9999 13 6.9999H3.41558L6.7062 3.70615C7.09683 3.31553 7.09683 2.68115 6.7062 2.29053C6.31558 1.8999 5.6812 1.8999 5.29058 2.29053L0.290576 7.29053L0.293701 7.29365Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button id="next" class="flex items-center justify-center group bg-white border-[3px] border-blue-950 rounded-full h-[60px] w-[60px] hover:bg-blue-950 transition-colors duration-300">
+                        <span class="text-blue-950 group-hover:text-white transition-colors duration-300 items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M13.7063 8.70615C14.0969 8.31553 14.0969 7.68115 13.7063 7.29053L8.70625 2.29053C8.31563 1.8999 7.68125 1.8999 7.29063 2.29053C6.9 2.68115 6.9 3.31553 7.29063 3.70615L10.5875 6.9999H1C0.446875 6.9999 0 7.44678 0 7.9999C0 8.55303 0.446875 8.9999 1 8.9999H10.5844L7.29375 12.2937C6.90312 12.6843 6.90312 13.3187 7.29375 13.7093C7.68437 14.0999 8.31875 14.0999 8.70938 13.7093L13.7094 8.70928L13.7063 8.70615Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <!-- Slides -->
+                <div id="carousel" class="flex gap-[48px] overflow-x-hidden scroll-smooth max-w-6xl mx-auto"></div>
+                <!-- Botones desktop -->
+                <!-- <div class="flex justify-center items-center gap-5 mb-5">
+                    <button id="prev-2" class="hidden absolute left-15 top-1/2 z-40 -translate-y-1/2 xl:flex items-center justify-center group bg-white border-[3px] border-blue-950 rounded-full h-[60px] w-[60px] hover:bg-blue-950 transition-colors duration-300">
+                        <span class="text-blue-950 group-hover:text-white transition-colors duration-300 items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M0.293701 7.29365C-0.0969238 7.68428 -0.0969238 8.31865 0.293701 8.70928L5.2937 13.7093C5.68433 14.0999 6.3187 14.0999 6.70933 13.7093C7.09995 13.3187 7.09995 12.6843 6.70933 12.2937L3.41245 8.9999H13C13.5531 8.9999 14 8.55303 14 7.9999C14 7.44678 13.5531 6.9999 13 6.9999H3.41558L6.7062 3.70615C7.09683 3.31553 7.09683 2.68115 6.7062 2.29053C6.31558 1.8999 5.6812 1.8999 5.29058 2.29053L0.290576 7.29053L0.293701 7.29365Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button id="next-2" class="hidden absolute right-15 top-1/2 -translate-y-1/2 xl:flex items-center justify-center group bg-white border-[3px] border-blue-950 rounded-full h-[60px] w-[60px] hover:bg-blue-950 transition-colors duration-300">
+                        <span class="text-blue-950 group-hover:text-white transition-colors duration-300 items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M13.7063 8.70615C14.0969 8.31553 14.0969 7.68115 13.7063 7.29053L8.70625 2.29053C8.31563 1.8999 7.68125 1.8999 7.29063 2.29053C6.9 2.68115 6.9 3.31553 7.29063 3.70615L10.5875 6.9999H1C0.446875 6.9999 0 7.44678 0 7.9999C0 8.55303 0.446875 8.9999 1 8.9999H10.5844L7.29375 12.2937C6.90312 12.6843 6.90312 13.3187 7.29375 13.7093C7.68437 14.0999 8.31875 14.0999 8.70938 13.7093L13.7094 8.70928L13.7063 8.70615Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div> -->
+            </div>
+        </section>
+        
+        <!-- JUGABILIDAD -->
+        <section id="jugabilidad" class="flex flex-col mx-auto py-10 lg:py-20 px-7 lg:container items-center w-full">
+            <div class="relative flex flex-col gap-10 items-center">
+                <h1 class="text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg" style="text-shadow: 4px 4px 0 #f97316;">
+                    ¡JUGABILIDAD!
+                </h1>
+                <p class="text-2xl md:text-3xl font-bold mb-10 text-center">
+                    Cada actividad de AprendiAventuras está pensada para fortalecer habilidades clave<br> del desarrollo infantil de una manera entretenida y significativa.
+                </p>
+            </div>
+            <div class="flex flex-col mx-auto py-10 lg:py-20 px-7 lg:container items-start w-full">
+                <!-- VOCALES -->
+                <div class="flex flex-row w-full">    
+                    <!-- Primer div: título -->
+                    <div class="flex flex-col w-full lg:w-2/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-8 
+                                items-center justify-center text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg text-center rounded-l-[20px]" 
+                        style="text-shadow: 4px 4px 0 #f97316;">
+                        Vocales
+                    </div>
+                    <!-- Segundo div: carrusel de imágenes -->
+                    <div class="relative flex flex-col w-full lg:w-3/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-20 items-center justify-center rounded-r-[20px] overflow-hidden">
+                        <!-- Carrusel -->
+                        <div id="carrusel-vocales" class="flex gap-3 h-full items-center overflow-x-hidden scroll-smooth">
+                            <!-- Aquí se inyectan las imágenes -->
+                        </div>
+                        <!-- Botones -->
+                        <button id="prev-vocales" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M0.293701 7.29365C-0.0969238 7.68428 -0.0969238 8.31865 0.293701 8.70928L5.2937 13.7093C5.68433 14.0999 6.3187 14.0999 6.70933 13.7093C7.09995 13.3187 7.09995 12.6843 6.70933 12.2937L3.41245 8.9999H13C13.5531 8.9999 14 8.55303 14 7.9999C14 7.44678 13.5531 6.9999 13 6.9999H3.41558L6.7062 3.70615C7.09683 3.31553 7.09683 2.68115 6.7062 2.29053C6.31558 1.8999 5.6812 1.8999 5.29058 2.29053L0.290576 7.29053L0.293701 7.29365Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button id="next-vocales" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M13.7063 8.70615C14.0969 8.31553 14.0969 7.68115 13.7063 7.29053L8.70625 2.29053C8.31563 1.8999 7.68125 1.8999 7.29063 2.29053C6.9 2.68115 6.9 3.31553 7.29063 3.70615L10.5875 6.9999H1C0.446875 6.9999 0 7.44678 0 7.9999C0 8.55303 0.446875 8.9999 1 8.9999H10.5844L7.29375 12.2937C6.90312 12.6843 6.90312 13.3187 7.29375 13.7093C7.68437 14.0999 8.31875 14.0999 8.70938 13.7093L13.7094 8.70928L13.7063 8.70615Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- NÚMEROS -->
+                <div class="flex flex-row w-full">    
+                    <!-- Segundo div: carrusel de imágenes -->
+                    <div class="relative flex flex-col w-full lg:w-3/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-20 items-center justify-center rounded-l-[20px] overflow-hidden">
+                        <!-- Carrusel -->
+                        <div id="carrusel-numeros" class="flex gap-3 h-full items-center overflow-x-hidden scroll-smooth">
+                            <!-- Aquí se inyectan las imágenes -->
+                        </div>
+                        <!-- Botones -->
+                        <button id="prev-numeros" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M0.293701 7.29365C-0.0969238 7.68428 -0.0969238 8.31865 0.293701 8.70928L5.2937 13.7093C5.68433 14.0999 6.3187 14.0999 6.70933 13.7093C7.09995 13.3187 7.09995 12.6843 6.70933 12.2937L3.41245 8.9999H13C13.5531 8.9999 14 8.55303 14 7.9999C14 7.44678 13.5531 6.9999 13 6.9999H3.41558L6.7062 3.70615C7.09683 3.31553 7.09683 2.68115 6.7062 2.29053C6.31558 1.8999 5.6812 1.8999 5.29058 2.29053L0.290576 7.29053L0.293701 7.29365Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button id="next-numeros" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M13.7063 8.70615C14.0969 8.31553 14.0969 7.68115 13.7063 7.29053L8.70625 2.29053C8.31563 1.8999 7.68125 1.8999 7.29063 2.29053C6.9 2.68115 6.9 3.31553 7.29063 3.70615L10.5875 6.9999H1C0.446875 6.9999 0 7.44678 0 7.9999C0 8.55303 0.446875 8.9999 1 8.9999H10.5844L7.29375 12.2937C6.90312 12.6843 6.90312 13.3187 7.29375 13.7093C7.68437 14.0999 8.31875 14.0999 8.70938 13.7093L13.7094 8.70928L13.7063 8.70615Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Primer div: título -->
+                    <div class="flex flex-col w-full lg:w-2/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-8 
+                                items-center justify-center text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg text-center rounded-r-[20px]" 
+                        style="text-shadow: 4px 4px 0 #f97316;">
+                        Números
+                    </div>
+                </div>
+                <!-- FORMAS Y COLORES -->
+                <div class="flex flex-row w-full">    
+                    <!-- Primer div: título -->
+                    <div class="flex flex-col w-full lg:w-2/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-8 
+                                items-center justify-center text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg text-center rounded-l-[20px]" 
+                        style="text-shadow: 4px 4px 0 #f97316;">
+                        Formas y colores
+                    </div>
+                    <!-- Segundo div: carrusel de imágenes -->
+                    <div class="relative flex flex-col w-full lg:w-3/5 h-[500px] bg-gradient-to-r from-blue-500 to-yellow-500 blob-shape mb-8 px-20 items-center justify-center rounded-r-[20px] overflow-hidden">
+                        <!-- Carrusel -->
+                        <div id="carrusel-fyc" class="flex gap-3 h-full items-center overflow-x-hidden scroll-smooth">
+                            <!-- Aquí se inyectan las imágenes -->
+                        </div>
+                        <!-- Botones -->
+                        <button id="prev-fyc" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M0.293701 7.29365C-0.0969238 7.68428 -0.0969238 8.31865 0.293701 8.70928L5.2937 13.7093C5.68433 14.0999 6.3187 14.0999 6.70933 13.7093C7.09995 13.3187 7.09995 12.6843 6.70933 12.2937L3.41245 8.9999H13C13.5531 8.9999 14 8.55303 14 7.9999C14 7.44678 13.5531 6.9999 13 6.9999H3.41558L6.7062 3.70615C7.09683 3.31553 7.09683 2.68115 6.7062 2.29053C6.31558 1.8999 5.6812 1.8999 5.29058 2.29053L0.290576 7.29053L0.293701 7.29365Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button id="next-fyc" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-3 rounded-full z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="currentColor">
+                                <path d="M13.7063 8.70615C14.0969 8.31553 14.0969 7.68115 13.7063 7.29053L8.70625 2.29053C8.31563 1.8999 7.68125 1.8999 7.29063 2.29053C6.9 2.68115 6.9 3.31553 7.29063 3.70615L10.5875 6.9999H1C0.446875 6.9999 0 7.44678 0 7.9999C0 8.55303 0.446875 8.9999 1 8.9999H10.5844L7.29375 12.2937C6.90312 12.6843 6.90312 13.3187 7.29375 13.7093C7.68437 14.0999 8.31875 14.0999 8.70938 13.7093L13.7094 8.70928L13.7063 8.70615Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCARGA -->
+        <section id="descarga" class="h-full flex items-center justify-center py-0 lg:py-20 text-center">
+            <div class="flex flex-col px-7 xl:container">
+                <div class="flex flex-col xl:flex-row justify-center items-center lg:gap-40">
+                    <div class="flex flex-col w-full xl:w-2/5 justify-center items-center bg-gray-900 py-20 px-10 rounded-2xl animate-soft-zoom">
+                        <div class="flex flex-col justify-center items-center w-full">
+                            <a href="#" class="bg-yellow-400 hover:bg-yellow-500 w-full text-slate-900 font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl mb-12">
+                                Descargar para Android
+                            </a>
+                            <a href="#" class="bg-yellow-400 hover:bg-yellow-500 w-full text-slate-900 font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl">
+                                Descargar para PC
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full xl:w-2/5 justify-center items-center">
+                        <div class="relative flex flex-col inline-block mb-10">
+                            <h1 class="text-5xl md:text-8xl font-black text-yellow-400 drop-shadow-lg" style="text-shadow: 4px 4px 0 #f97316;">
+                                ¡DESCARGA AQUÍ!
+                            </h1>
+                        </div>
+                        <p class="text-2xl md:text-3xl font-bold mb-12">
+                            Una aplicación segura, intuitiva y pensada para niños. Descárgala y deja que aprender sea una experiencia positiva.
+                        </p>
+                        <a href="#" class="bg-orange-500 hover:bg-orange-600 w-full text-white font-black px-8 py-6 rounded-full shadow-2xl transition-transform hover:scale-105 text-2xl md:text-3xl">
+                            Abrir en el navegador
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="py-12 px-4 bg-slate-950 border-t border-slate-800 text-center">
+            <div class="flex justify-center gap-4 mb-6 text-4xl">
+                🐻 🐰 🦊 🐸 🐱 🦁 🐼
+            </div>
+            <p class="text-gray-400">
+                © 2026 Aprendiaventuras - Educación infantil
+            </p>
+        </footer>
+        
+        <script src="js/carrusel-inf.js"></script>
+        <script src="js/carrusel-vol.js"></script>
+        <script src="js/carrusel-num.js"></script>
+        <script src="js/carrusel-fyc.js"></script>
+
+    </body>
+</html>
